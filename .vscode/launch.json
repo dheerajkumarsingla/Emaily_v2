@@ -10,6 +10,18 @@
             ],
             "program": "${workspaceFolder}/index.js",
             "outputCapture": "std",
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Emaily nodemon debugger",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/index.js",
+            "outputCapture": "std",
+            "runtimeExecutable": "/Users/dheerajkumarsingla/.nvm/versions/node/v8.10.0/bin/nodemon",
+            "restart": true,
         }
     ]
 }

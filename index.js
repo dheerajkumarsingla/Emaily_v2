@@ -1,11 +1,13 @@
-const express = require('express');
+const Express = require('express');
+const Passport = require('./services/passport');
+const AuthRoutes = require('./routes/auth_routes')
 
-const app = express();
+const app = Express();
 
-app.get('/', (req,res) => {
-    res.send({'hi': "there - coming from subsequent deployment"});
-})
+AuthRoutes(app);
 
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT);
+
+console.log('Emaily Running on Port: 5000');
