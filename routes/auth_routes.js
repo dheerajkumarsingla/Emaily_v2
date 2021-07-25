@@ -10,4 +10,7 @@ module.exports = (app) => {
     app.get('/auth/google/callback', 
         Passport.authenticate('google')
     )
+    app.get('/', (req, res) => {
+        res.send({"response": "success"});
+    })
 }
