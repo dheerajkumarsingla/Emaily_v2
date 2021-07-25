@@ -10,4 +10,4 @@ const PORT = process.env.PORT || 5000;
 
 app.listen(PORT);
 
-console.log('Emaily Running on Port: 5000');
+console.log(`Emaily Running on Port: ${PORT}`);
