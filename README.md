@@ -7,5 +7,4 @@ graph TD;
     D --> |Function we wrote to turn user id into user|E("deserializeUser");
     E --> F("User obj added to req object as req.user");
     B --> G{"Request sent to route hadler"}
-
 ```
