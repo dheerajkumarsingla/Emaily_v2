@@ -9,6 +9,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/index.js",
+            "runtimeExecutable": "/Users/dheerajkumarsingla/.nvm/versions/node/v12.16.2/bin/node",
             "outputCapture": "std",
         },
         {
@@ -20,7 +21,7 @@
             ],
             "program": "${workspaceFolder}/index.js",
             "outputCapture": "std",
-            "runtimeExecutable": "/Users/dheerajkumarsingla/.nvm/versions/node/v8.10.0/bin/nodemon",
+            "runtimeExecutable": "/Users/dheerajkumarsingla/.nvm/versions/node/v12.16.2/bin/nodemon",
             "restart": true,
         }
     ]
