@@ -13,4 +13,11 @@ module.exports = (app) => {
     app.get('/', (req, res) => {
         res.send({"response": "success"});
     })
+    app.get('/api/currentUser', (req, res) => {
+        res.send(req.user);
+    })
+    app.get('/api/logout', (req, res) => {
+        req.logout();
+        res.send(req.user);
+    })
 }
