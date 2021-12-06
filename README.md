@@ -8,3 +8,9 @@ graph TD;
     E --> F("User obj added to req object as req.user");
     B --> G{"Request sent to route hadler"}
 ```
+
+How to start client and server concurrently on local ?
+-> npm run dev
+
+How to start client and server on prod ?
+
