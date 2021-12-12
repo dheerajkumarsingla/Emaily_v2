@@ -18,7 +18,7 @@ class Header extends Component{
                 )
         }
     }
-
+    // 
     renderRightContent() {
         return (
             <Link 
