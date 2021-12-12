@@ -14,3 +14,4 @@ How to start client and server concurrently on local ?
 
 How to start client and server on prod ?
 
+HLD: https://drive.google.com/drive/folders/1qjibEgEUWrlKx54ZBiOJJbqKtfMrH1as?usp=sharing

@@ -10,8 +10,9 @@ import {
     applyMiddleware
 } from 'redux'
 import reducers from './reducers';
+import ReduxThunk from 'redux-thunk';
 
-const store = createStore(reducers, {}, applyMiddleware());
+const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
 // Render the custom component and along with it 
 // providing the second argument which is contianer

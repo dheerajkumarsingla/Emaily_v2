@@ -8,7 +8,10 @@ module.exports = (app) => {
     );
 
     app.get('/auth/google/callback', 
-        Passport.authenticate('google')
+        Passport.authenticate('google'),
+        (req, res) => {
+            res.redirect('/surveys');
+        }
     )
     app.get('/', (req, res) => {
         res.send({"response": "success"});
@@ -18,6 +21,9 @@ module.exports = (app) => {
     })
     app.get('/api/logout', (req, res) => {
         req.logout();
-        res.send(req.user);
+        // TODO: Logout can also be implemented as the ajax request to BE from FE,
+        // so that whole page does not refresh at the client side, as this loading the 
+        // whole page fetchs the whole HTML too, which can be optimized
+        res.redirect('/');
     })
 }
